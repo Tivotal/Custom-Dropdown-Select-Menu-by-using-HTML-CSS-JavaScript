@@ -1,0 +1,77 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #e3f1fd;
+}
+
+.select-menu {
+  width: 380px;
+  margin: 140px auto;
+}
+
+.select-menu .menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.select-menu.open .menu-btn i {
+  transform: rotate(180deg);
+}
+
+.options {
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.select-menu.open .options {
+  display: block;
+}
+
+.options .option {
+  display: flex;
+  height: 55px;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+  background-color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f2f2f2;
+}
+
+.option i {
+  font-size: 25px;
+  margin-right: 12px;
+}
